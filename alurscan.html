@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alur Scan | IDE Bandung</title>
+        <link rel="icon" href="img/logo_idx_merah.jpg">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="JQuery 3.5.1 Slim/jquery-3.5.1.slim.min.js"></script>
+        <script src="Popper JS/popper.min.js"></script>
+        <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+        <!-- DataTables Bootstrap 4 -->
+        <link rel="stylesheet" href="DataTables/dataTables.bootstrap4.min.css">
+        <script src="DataTables/jquery.dataTables.min.js"></script>
+        <script src="DataTables/dataTables.bootstrap4.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="bg-dark">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">ID Express IDE_16</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="problem.html">Penyelesaian Masalah</a>
+                    </li>
+                    <li>
+                        <a href="how.html">Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="sop.html">SOP</a>
+                    </li>
+                    <li>
+                        <a href="operasional.html">Operasional dan CX</a>
+                    </li>
+                    <li>
+                        <a href="alurscan.html">Alur Scan</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Kebijakan Divisi</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+        
+            <!-- Page Content -->
+            <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-light">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a href="#menu-toggle" class="btn btn-danger" id="menu-toggle">Menu</a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item active">
+                        <a type="button" class="btn btn-danger" href="index.html">Dashboard</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item active">
+                        <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Login</a>
+                    </li> -->
+                    <li>
+                        <a class="navbar-brand" style="color: white; font-size: 13pt;" href="#">ID Express Jawa Barat</a>
+                    </li>
+                    
+                    <li>
+                        <img src="img/logo_idx_merah.jpg" class="rounded" style="width: 0.9cm; height: 0.9cm;">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container text-center" style="padding-top: 65px;">
+            <h3>Alur Scan</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="nav nav-pills flex-column text-left" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-scan1-tab" data-toggle="pill" href="#v-pills-scan1" role="tab" aria-controls="v-pills-scan1" aria-selected="true">
+                            Pick Up
+                        </a>
+                        <a class="nav-link" id="v-pills-scan2-tab" data-toggle="pill" href="#v-pills-scan2" role="tab" aria-controls="v-pills-scan2" aria-selected="false">
+                            Delivery
+                        </a>
+                        <a class="nav-link" id="v-pills-scan3-tab" data-toggle="pill" href="#v-pills-scan3" role="tab" aria-controls="v-pills-scan3" aria-selected="false">
+                            Missroute
+                        </a>
+                        <a class="nav-link" id="v-pills-scan4-tab" data-toggle="pill" href="#v-pills-scan4" role="tab" aria-controls="v-pills-scan4" aria-selected="false">
+                            Return
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Pick Up -->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-scan1" role="tabpanel" aria-labelledby="v-pills-scan1-tab">
+                            <div class="">
+                                <h4>Pick Up</h4>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">1</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/call.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Customer/Seller membuat Order dengan tipe Pick Up -</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">2</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/chronometer.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin menjadwalkan ke kurir untuk melakukan Pick Up paket</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">3</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/location.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Kurir melakukan Pick Up sesuai dengan jadwal yang sudah ditentukan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">4</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/pickup.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Kurir melakukan pick up dan Scan Pick Up <br> - </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">5</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/motorcycle.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Kurir membawa paket yang telah di Pick Up ke TH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">6</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/printer.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin melakukan print AWB dan menempelkan AWB pada paket</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">7</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/pack.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan Scan Packing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">8</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/loading.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan Scan Loading</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">9</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/sending.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan Scan Sending</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delivery -->
+                        <div class="tab-pane fade" id="v-pills-scan2" role="tabpanel" aria-labelledby="v-pills-scan2-tab">
+                            <div class="">
+                                <h4>Delivery</h4>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">1</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/arrival.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan scan Arrival pada VT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">2</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/unloading.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan scan Unloading <br> - </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">3</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/pack.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing melakukan scan Unpacking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">4</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/sorting.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Sorting paket berdasar wilayah</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">5</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/scan.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Admin Processing/Kurir melakukan scan Delivery</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">6</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/rute.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Kurir memilih rute paling efektif</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">7</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/chat.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Konfirmasi ke Customer melalui chat/telpon <br> - </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">8</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/cash.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Jika paket POD/PAD, jangan lupa menagih uang barang/ongkir</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="card bg-light">
+                                            <div class="card-header bg-danger text-white font-weight-bolder">
+                                                <h4 class="card-title">9</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <img src="img/icon/delivery.png" alt="" style="width: 100px;">
+                                                <hr class="lineBlack">
+                                                <p class="card-text font-weight-bold">Foto customer sebagai bukti lalu scan POD <br> - </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <div class="card">
+                                    <div class="card-body bg-danger text-white font-weight-bolder">
+                                        <p>JIKA PAKET GAGAL TERKIRIM, KURIR WAJIB MELAKUKAN SCAN POS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-scan3" role="tabpanel" aria-labelledby="v-pills-scan3-tab">
+                            <div class="">
+                                <h4>Missroute</h4>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h5 class="font-weight-bold red-light">1</h5>
+                                        <img src="img/icon/loading.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Setelah admin Processing mensortir paket dan didapati paket diluar cover area/missroute</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <h5 class="font-weight-bold red-light">2</h5>
+                                        <img src="img/icon/monitor.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Scan POS AWB tersebut</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <h5 class="font-weight-bold red-light">3</h5>
+                                        <img src="img/icon/prob.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Tempelkan sticker (putih) di paket tersebut</p>
+                                    </div>
+                                </div>
+                                <hr class="lineBlack">
+                                <h5 class="font-weight-bold red-light">4</h5>
+                                <img src="img/icon/sending.png" alt="" width="100px">
+                                <p class="font-weight-bold red-light">Sending paket keluar TH</p>
+                                <!-- <section style="background-color: lightgrey;">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            
+                                        </div>
+                                        <div class="col-sm-7">
+                                            
+                                        </div>
+                                    </div>
+                                </section> -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-scan4" role="tabpanel" aria-labelledby="v-pills-scan4-tab">
+                            <div class="">
+                                <h4>Return</h4>
+                                <p class="text-left">Return merupakan pengiriman paket yang tertunda, terhambat, berhenti, dan kembali dari pihak penerima, pihak ketiga maupun IDExpress</p>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h5 class="font-weight-bold red-light">1</h5>
+                                        <img src="img/icon/motorcycle.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Kurir/Admin melakukan Scan Delivery AWB yang akan di Return</p>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h5 class="font-weight-bold red-light">2</h5>
+                                        <img src="img/icon/prob.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Scan Problem on Shipment (POS) dengan alasan yang sebenarnya</p>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h5 class="font-weight-bold red-light">3</h5>
+                                        <img src="img/icon/cs.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Hubungi Customer Exprience (CX) bahwa terdapat paket yang akan di  Return</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                    <div class="col-sm">
+                                        <h5 class="font-weight-bold red-light">4</h5>
+                                        <img src="img/icon/monitor.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Creat Return Waybill di menu "Search Returned Packages (Center)" di OMS</p>
+                                    </div><div class="col-sm">
+                                        <h5 class="font-weight-bold red-light">5</h5>
+                                        <img src="img/icon/forms.png" alt="" width="100px">
+                                        <hr class="lineBlack">
+                                        <p class="font-weight-bold red-light">Isi form dengan informasi AWB, Return Destination, Return Reason, Description, dan Bukti Foto jika ada, lalu Confirm</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="text-left">Alasan Paket Return:</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ol class="text-left">
+                                            <li>Penerima berada di luar kota dan tidak meminta penjadwalan ulang</li>
+                                            <li>Data AWB rusak</li>
+                                            <li>Penerima merasa tidak memesan paket atau menolak paket</li>
+                                            <li>Penerima membatalkan pembelian</li>
+                                            <li>Penerima tidak dapat dihubungi dan tidak terdapat penerima lain</li>
+                                            <li>Kurir telah melakukan tiga kali percobaan pengiriman</li>
+                                            <li>AWB ganda</li>
+                                            <li>Penerima meminta Return</li>
+                                            <li>AWB tertukar (Croslabel)</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                &nbsp;
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="text-left">Confirm/Cancel Return:</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <ol class="text-left">
+                                            <li>Konfirmasi ke seller apakah paket boleh di Return atau tidak</li>
+                                            <li>Jika sudah konfirmasi seller, buka menu "Search Returned Packages (Branch)"</li>
+                                            <li>Search AWB, klik AWB, Confirm/Cancel</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                &nbsp;
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="text-left">Void Return</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-left">Void AWB Return dapat dilakukan apabila AWB sudah di confirm TH Origin dan hanya dapat dilakukan maksimal 24 jam setelah di confirm</p>
+                                        <p class="text-left">Koordinator dapat melakukan void pada keadaan AWB sudah registrasi return tetapi ternyata customer datang ke TH untuk mengambil paket atau alamat customer ditemukan</p>
+                                        <ol class="text-left">
+                                            <li>Login menggunakan akun Koordinator</li>
+                                            <li>Buka menu "Search Returned Packages (Branch)"</li>
+                                            <li>Search AWB, klik AWB, Void lalu Confirm</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- DataTables JS -->
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
+
+<!-- Toogle Menu JS -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Divisi | IDE Bandung</title>
+        <link rel="icon" href="img/logo_idx_merah.jpg">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="JQuery 3.5.1 Slim/jquery-3.5.1.slim.min.js"></script>
+        <script src="Popper JS/popper.min.js"></script>
+        <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+        <!-- DataTables Bootstrap 4 -->
+        <link rel="stylesheet" href="DataTables/dataTables.bootstrap4.min.css">
+        <script src="DataTables/jquery.dataTables.min.js"></script>
+        <script src="DataTables/dataTables.bootstrap4.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="bg-dark">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">ID Express IDE_16</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="problem.html">Penyelesaian Masalah</a>
+                    </li>
+                    <li>
+                        <a href="how.html">Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="sop.html">SOP</a>
+                    </li>
+                    <li>
+                        <a href="operasional.html">Operasional dan CX</a>
+                    </li>
+                    <li>
+                        <a href="alurscan.html">Alur Scan</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Kebijakan Divisi</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+        
+            <!-- Page Content -->
+            <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-light">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a href="#menu-toggle" class="btn btn-danger" id="menu-toggle">Menu</a>
+                    </li>
+                    &nbsp;&nbsp;
+                    <li class="nav-item active">
+                        <a type="button" class="btn btn-danger" href="index.html">Dashboard</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item active">
+                        <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Login</a>
+                    </li> -->
+                    <li>
+                        <a class="navbar-brand" style="color: white; font-size: 13pt;" href="#">ID Express Jawa Barat</a>
+                    </li>
+                    
+                    <li>
+                        <img src="img/logo_idx_merah.jpg" class="rounded" style="width: 0.9cm; height: 0.9cm;">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Tabs -->
+        <div class="container" style="padding-top: 65px;">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active font-weight-bold" data-toggle="tab" href="#trainer">IT/Trainer</a>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" data-toggle="tab" href="#finance">Finance</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" data-toggle="tab" href="#hrd">HRD</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link font-weight-bold" data-toggle="tab" href="#purchasing">Purchasing</a>
+                </li>
+			</ul>
+        </div>
+
+        <!-- Tabs Content -->
+        <div class="tab-content">
+            <!-- IT/Trainer -->
+            <div id="trainer" class="container tab-pane active text-center">
+                <h3>IT/Trainer</h3>
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm-3 text-left">
+                            <div class="nav nav-pills flex-column" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-itt1-tab" data-toggle="pill" href="#v-pills-itt1" role="tab" aria-controls="v-pills-itt1" aria-selected="true">
+                                    Surat/Form
+                                </a>
+                                <!-- <a class="nav-link" id="v-pills-itt2-tab" data-toggle="pill" href="#v-pills-itt2" role="tab" aria-controls="v-pills-itt2" aria-selected="false">
+                                    Admin TH
+                                </a> -->
+
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-itt1" role="tabpanel" aria-labelledby="v-pills-itt1-tab">
+                                    <h4>Surat dan Form</h4>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <img src="img/icon/asuransi.png" alt="" width="100px">
+                                            <h5>Surat Penggunaan Asuransi</h5>
+                                            <p>Digunakan ketika paket menggunakan asuransi</p>
+                                            <hr class="lineBlack">
+                                            <a href="file/surat/Surat Pernyataan Penggunaan Asuransi.doc" download class="btn btn-danger">Download Surat</a>
+                                        </div>
+                                        <div class="col-sm">
+                                            <img src="img/icon/food.png" alt="" width="100px">
+                                            <h5>Surat Pernyataan Pengiriman Makanan</h5>
+                                            <p>Digunakan saat paket berisi makanan</p>
+                                            <a href="file/surat/Surat Pernyataan Mengirim Makanan.doc" download class="btn btn-danger">Download Surat</a>
+                                        </div>
+                                        <div class="col-sm">
+                                            <img src="img/icon/kayu.png" alt="" width="100px">
+                                            <h5>Surat Pernyataan Packing Kayu</h5>
+                                            <p>Packing kayu harus disertai surat ini</p>
+                                            <hr class="lineBlack">
+                                            <a href="file/surat/Surat Pernyataan Packing Kayu.doc" download class="btn btn-danger">Download Surat</a>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <img src="img/icon/letter.png" alt="" width="100px">
+                                    <h5>Formulir Pengajuan Klaim</h5>
+                                    <p>Formulir klaim ganti rugi apabila ada masalah dengan paket</p>
+                                    <a href="file/surat/Form Pengajuan Klaim.docx" download class="btn btn-danger">Download Formulir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Finance -->
+            <div id="finance" class="container tab-pane text-center">
+                <h3>Finance</h3>
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm-3 text-left">
+                            <div class="nav nav-pills flex-column" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-finance1-tab" data-toggle="pill" href="#v-pills-finance1" role="tab" aria-controls="v-pills-finance1" aria-selected="true">
+                                    Laporan PU/Delivery
+                                </a>
+                                <a class="nav-link" id="v-pills-finance2-tab" data-toggle="pill" href="#v-pills-finance2" role="tab" aria-controls="v-pills-finance2" aria-selected="true">
+                                    Pengklaiman BBM
+                                </a>
+                                <a class="nav-link" id="v-pills-finance3-tab" data-toggle="pill" href="#v-pills-finance3" role="tab" aria-controls="v-pills-finance3" aria-selected="true">
+                                    Pengajuan Klaim
+                                </a>
+                                <a class="nav-link" id="v-pills-finance4-tab" data-toggle="pill" href="#v-pills-finance4" role="tab" aria-controls="v-pills-finance4" aria-selected="true">
+                                    Transfer COD
+                                </a>
+                                <a class="nav-link" id="v-pills-finance5-tab" data-toggle="pill" href="#v-pills-finance5" role="tab" aria-controls="v-pills-finance5" aria-selected="true">
+                                    SOP Driver
+                                </a>
+                                <a class="nav-link" id="v-pills-finance6-tab" data-toggle="pill" href="#v-pills-finance6" role="tab" aria-controls="v-pills-finance6" aria-selected="true">
+                                    SOP Pembayaran
+                                </a>
+                                <a class="nav-link" id="v-pills-finance7-tab" data-toggle="pill" href="#v-pills-finance7" role="tab" aria-controls="v-pills-finance7" aria-selected="true">
+                                    Penyusunan Klaim
+                                </a>
+                                <a class="nav-link" id="v-pills-finance8-tab" data-toggle="pill" href="#v-pills-finance8" role="tab" aria-controls="v-pills-finance8" aria-selected="true">
+                                    SOP Setoran TH
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-finance1" role="tabpanel" aria-labelledby="v-pills-finance1-tab">
+                                    <h4>Laporan Pick Up Reguler & Delivery (COD & PAD)</h4>
+                                    <br>
+                                    <p class="text-justify"> Laporan Pick Up Reguler & Delivery (COD & PAD) diisi oleh admin/koordintor sebagai laporan keuangan 
+                                        Pick Up reguler (IDD & IDP) dan Delivery (COD & PDA). Laporan ini diisi setiap hari, lalu untuk kemudian
+                                        di kirim ke Finance per minggu.
+                                    </p>
+                                    <p class="text-justify">Keterangan dan cara pengisian laporan sebagai berikut:</p>
+                                    <ul class="text-justify">
+                                        <li>Bagian POD Branch merupakan TH tempat AWB di POD</li>
+                                        <li>Kolom AWB diisi oleh daftar AWB Pick Up Reguler dan Delivery (COD & PAD)</li>
+                                        <li>Nominal Tagihan merupakan jumlah uang yang harus dibayar TH ke Finance setiap harinya berdasrkan Pick Up Reguler dan Delivery (COD & PAD)</li>
+                                        <li>Kolom Nominal Transfer adalah jumlah uang yang dibayarkan TH ke Finance</li>
+                                        <li>Outstanding merupakan sisa uang yang harus dibayarkan ke Finance jika nilai kolom Nominal Transfer lebih kecil daripada Nominal Tagihan.
+                                            Kolom ini tidak perlu diisi karena sudah ada formula di dalam cellnya
+                                        </li>
+                                        <li>Tanggal Transfer diisi tanggal proses transfer uang dilakukan ke Finance</li>
+                                        <li>Keterangan bisa diisi oleh alasan/penjelasan singkat proses transfer</li>
+                                        <li>TH diwajibkan memasukan bukti transfer di kolom Foto Bukti Transfer</li>
+                                    </ul>
+                                    <p>Template laporan Pick Up Reguler & Delivery (COD & PAD) bisa didownload dengan cara menekan tombol dibawah.</p>
+                                    <a href="file/finance/Template Setoran Delivery (COD & PAD) & Pick-Up Reguler (Cash & Monthly).xlsx" download class="btn btn-danger">Download Template Laporan</a>
+                                    <a href="file/finance/STANDARD OPRASIONAL PERUSAHAAN UNTUK PENGKLAIMAN-REVISI.pdf" download class="btn btn-danger">Download SOP Pengklaiman</a>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance2" role="tabpanel" aria-labelledby="v-pills-finance2-tab">
+                                    <h4>Standar Operasional Prosedur Pengklaiman Bahan Bakar Minyak (BBM)</h4>
+                                    <br>
+                                    <ol class="text-justify">
+                                        <li>Klaim BBM hanya untuk mobil operasional perusahaan dan kendaraan yang di gunakan
+                                            untuk kegiatan operasional SPV (sesuai dengan jenis kendaraan yang di pakai sehari hari untuk operasional kantor).</li>
+                                        <li>Klaim bon secara berurutan disesuaikan dari tanggal terkecil sampai terbesar.</li>
+                                        <li>Bon tidak boleh manual, Bon yang bisa diklaim hanya bon yang ada keterangan (kilometer, no plat motor/mobil disertakan foto).</li>
+                                            <img src="img/content/klaim_1.png" alt="" class="img-center" width="400px">
+                                        <li>Setiap selesai pengisian BBM harus dilakukan pengambilan foto motor/mobil tersebut. Pengambilan foto harus menggunakan app Timestamp.</li>
+                                            <img src="img/content/klaim_2.png" alt="" class="img-center" width="400px">
+                                        <li>Spidometer mobil/motor tidak boleh di restart atau di reset, apabila spidometer di
+                                            restart/reset bon tersebut tidak dapat di klaim.
+                                        </li>
+                                        <li>Apabila form klaim beserta bon tidak sama atau berbeda secara otomatis tidak bisa di klaim.</li>
+                                        <li>Driver dan SPV harus membuat laporan perjalanan yang di setujui oleh atasannya masing-masing.</li>
+                                        <li>Apabila ada pemakaian kendaraan selain dari yang di ketahui perusahaan untuk
+                                            kegiatan operasional diharapkan konfirmasi kepada pihak management terlebih dahulu.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance3" role="tabpanel" aria-labelledby="v-pills-finance3-tab">
+                                    <h4>Pengajuan Klaim</h4>
+                                    <br>
+                                    <div class="card">
+                                        <div class="text-left bg-danger card-header">
+                                            <h6 class="text-white">Koordinator</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="text-justify card-text">
+                                                <li>Periode Klam : Tgl 1-7, 8-15, 16-23, 24-akhir bulan. Dikumpulkan setiap akhir tanggal periode (7, 15, 23, dan Akhir Bulan)</li>
+                                                <li>Koordinator wajib membuat laporan untuk jadwal kurir dan driver setiap hari</li>
+                                                <li>Koordinator harus cek kembali bon parkir, BBM, tol yang diajukan sebelum dikirimkan kepada Finance di akhir periode</li>
+                                                <li>Setiap bon yang diajukan oleh kurir dan driver harus sesuai dengan rute dan jadwal pengiriman paket setiap harinya</li>
+                                                <li>Kirim bukti klaim ke Finance (HO) setiap akhir periode untuk pengecekan (Discan semua lalu kirim email dan CC SPV masing-masing)</li>
+                                                <li>Setiap koordinator membuat data iuran/belanja bulanan di THnya masing-masing (Format Excel, Misal: Iuran Air, Keamanan, RT/RW, dan cantumkan tanggal pembayaran)</li>
+                                                <li>Setiap pembayaran harus disertai dengan invoice atau kwitansi pembayaran</li>
+                                                <li>Penerima uang harus jelas nama penerimanya</li>
+                                                <li>Segala keperluan kantor harus ada acc dari pihak Finance</li>
+                                                <li>SPV harus mengetahui pengeluaran yang dibuat oleh Koordinator masing-masing TH</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <hr class="lineBlack">
+                                    <div class="card">
+                                        <div class="text-left bg-danger card-header">
+                                            <h6 class="text-white">Driver</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="text-justify card-text">
+                                                <li>Periode Klam : Tgl 1-7, 8-15, 16-23, 24-akhir bulan. Dikumpulkan setiap akhir tanggal periode (7, 15, 23, dan Akhir Bulan)</li>
+                                                <li>Driver hanya boleh klaim BBM, Tol, dan parkir operasinal</li>
+                                                <li>Driver wajib memiliki Flazz Etol (1 Driver 1 kartu dan Top Up Mandiri)</li>
+                                                <li>Driver harus membuat form permohonan, form pembayaran, dan dianjukan ke Koordinator untuk proses pembayaran</li>
+                                                <li>Hanya yang memiliki struk Tol saya yang bisa diklaim ke kantor, apabila struk tidak keluar dari mesin tol makanan
+                                                    Driver wajib mencetak bukti pemakaian e-toll tersebut ke bank BCA terdekat ke CX untuk di print
+                                                </li>
+                                                <li>Pengklaiman dapat dilakukan setiap hari dan disetorkan kepada Koordinator masing-masing</li>
+                                                <li>Setelah diproses oleh Finance maka uang akan dicairkan via transfer ke rekening masing-masing Driver. Tidak bisa cash selambat-lambatnya h+3</li>
+                                                <img src="img/content/klaim_3.png" alt="" height="300px">
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <hr class="lineBlack">
+                                    <div class="card">
+                                        <div class="text-left bg-danger card-header">
+                                            <h6 class="text-white">Kurir</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <ol class="text-justify card-text">
+                                                <li>Periode Klam : Tgl 1-7, 8-15, 16-23, 24-akhir bulan. Dikumpulkan setiap akhir tanggal periode (7, 15, 23, dan Akhir Bulan)</li>
+                                                <li>Kurir hanya boleh klaim bon parkit saja</li>
+                                                <li>Bon disimpan dan beri tanggak apabila tidak ada tanggalnya (tulis tangan)</li>
+                                                <li>Kurir harus membuat form permohonan pembayaran masing-masing dan diajukan ke Koordinator untuk proses pembayaran</li>
+                                                <li>Bon disusun sesuai tanggal dan jam sesuai jadwal perjalanan pengirian</li>
+                                                <li>Pengklaiman dapat dilakukan setiap hari dan disetorkan kepada Koordinator masing-masing</li>
+                                                <li>Setelah diproses oleh Finance maka uang akan dicairkan via transfer ke rekening masing-masing kurir. Tidak bisa cash selambat-lambatnya H+3</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <hr class="lineBlack">
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance4" role="tabpanel" aria-labelledby="v-pills-finance4-tab">
+                                    <h4>Transfer COD</h4>
+                                    <br>
+                                    <ol class="text-justify">
+                                        <li>Kurir dan Driver yang mengirim paket COD wajib menyetorkan uangnya setelah paket terkirim (POD) ke Koordinator,
+                                            lalu Koordinator yang akan menyetorkan ke rekening perusahaan makasimal H+1 pukul 10 pagi menggunakan rekening Koordinator
+                                        </li>
+                                        <li>Apabila proses setor uang lewat teller tidak perlu diberi keterangan, karena akan kena biaya Rp. 5.000 per keterangan, kecuali lewat M-Banking atau I-Banking
+                                        </li>
+                                        <li>Uang COD di transfer sesuai nominal barang masing-masing, contoh: transfer 100.000 keterangannya; No. AWB - 30.000, 
+                                            No. AWB - 35.000 dan No. AWB - 35.000 jika transfer 1 kali sejumlah keseluruhan nominal yang diterima di manifest</li>
+                                        <li>Format report COD di M-Banking: COD selain Shopee = COD Reg TH.. Tgl Terkirim, COD Shopee = COD SH TH.. Tgl Terkirim, Cash PU TH..  Tgl Pick Up, PAD TH.. Tgl Deliv</li>
+                                        <li>Membuat rekapan transferan COD di Excell (Buat Per Tanggal Per Sheet dalam 1 File/Bulan)</li>
+                                        <li>Kirim bukti setoran/bukti transfer dan data manifest ke Finance, untuk dilakukan pengecekan</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance5" role="tabpanel" aria-labelledby="v-pills-finance5-tab">
+                                    <h4>SOP Driver</h4>
+                                    <br>
+                                    <ol class="text-justify">
+                                        <li>Driver wajib memelihara kebersihan mobil operasinalnya masing-masing setiap hari</li>
+                                        <li>Menyimpan kendaraan di tempat yang aman dan layak</li>
+                                        <li>Driver wajib memeriksa secara rutin untuk kendaraan operasionalnya seperti mengecek air aki, oli mesin, minyak rem, dll</li>
+                                        <li>Driver wajib menginformasikan posisi kilometer untuk dilakukan service secara berkala pada kilometer 1.000 dan kelipatan 10.000 km, dan mengetahui jadwal service lainnya.
+                                            Menginformasikan kepada pihak perusahaan untuk melakukan service, lalu driver mengantarkan mobil operasional tersebut ke tempat yang sudah disiapkan oleh pihak perusahaan
+                                        </li>
+                                        <li>Driver harus mengetahui jadwal untuk pembaruan STNK dan KIR kendaraan operasinal.
+                                            Dan menginformasikan selambat-lambatnya 1 bulan sebelum jatuh tempo. Jika ada keterlambatan dalam pengurusan service, perpanjangan STNK dan KIR,
+                                            maka Driver yang akan menanggung biaya keterlambatan tersebut
+                                        </li>
+                                        <li>Driver mengisi BBM sesuai yang ditentukan oleh perusahaan (PETRALITE)</li>
+                                        <li>Jika ada kesalahan akibat dari kelalaian Driver, maka Driver harus bertanggung jawab dalam setiap kejadian (tilang, kecelakaan, hilang kendaraan)</li>
+                                        <li>Segera melaporkan setiap kejadian yang terjadi di lapangan/di jalan baik secara lisan maupun tertulis pada saat kejadian kepada pihak perusahaan (atasan langsung)
+                                            dan melaporkan kepada pihak perusahaan selambat-lambatnya 1x24 jam secara lisan dan tulisan
+                                        </li>
+                                        <li>Kunci mobil operasional tidak boleh dibawa pulang dan disimpan di TH masing-masing</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance6" role="tabpanel" aria-labelledby="v-pills-finance6-tab">
+                                    <h4>SOP Pembayaran</h4>
+                                    <br>
+                                    <ol class="text-justify">
+                                        <li>Setiap pembayaran harus memakai kuitansi dan bon yang resmi (bon harus ada cap toko atau perusahaan) dan menggunakan materai yntuk pembayaran
+                                            nominal diatas Rp. 500.000,-.
+                                        </li>
+                                        <li>Setiap pembayaran yang dibayarkan via transfer wajib melampirkan rekening toko/perusahaan tersebbut. Jika pembayaran tidak melalui Rekening Toko/Perusahaan tersebut, maka Toko/Perusahaan
+                                            tersebut wajib membuat surat pernyataan untuk PIC rekening pembayaran. Misal: Toko meminta transfer ke rekening Admin atau penjaga toko maka pihak Toko/Perusahaan
+                                            wajib membuat surat pernyataan)
+                                        </li>
+                                        <li>Setiap kuitansi pembayaran perusahaan seperti iuran atau pembayaran jasa diisi dengan nama PT. SAUDARA IMPI HUMANIS</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance7" role="tabpanel" aria-labelledby="v-pills-finance7-tab">
+                                    <h4>Penyusunan Klaim</h4>
+                                    <br>
+                                    <ol class="text-justify">
+                                        <li>Scan Bon dan Form klaim sebelum disusun di kertas</li>
+                                        <li>Bon klaim harus disusun rapi di kertas bekas atau kertas buram</li>
+                                        <li>Susunan harus terlihat nominalnya</li>
+                                        <li>Form klaim ditulis lengkap seluruhnya</li>
+                                        <li>Jika tersusun rapih maka akan dikenakan denda Rp. 100.000,-</li>
+                                        <li>Jika telat mengirim dokumen/hard copy klaim ke HO, klaim tidak akan dicairkan</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane fade show" id="v-pills-finance8" role="tabpanel" aria-labelledby="v-pills-finance8-tab">
+                                    <h4>SOP Setoran TH</h4>
+                                    <ol class="text-justify">
+                                        <embed src="file/finance/SOP SETORAN TH.pdf" type="" width="800px" height="450px">
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HRD -->
+            <div id="hrd" class="container tab-pane fade text-center">
+                <h3>HRD</h3>
+                <br>
+                <embed src="file/hrd/MEMO - 9 JANUARI 2021.pdf" type="" width="900px" height="600px">
+            </div>
+
+            <!-- Purchasing -->
+            <div id="purchasing" class="container tab-pane fade text-center">
+                <h3>Purchasing</h3>
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm-3 text-left">
+                            <div class="nav nav-pills flex-column" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-pur1-tab" data-toggle="pill" href="#v-pills-pur1" role="tab" aria-controls="v-pills-pur1" aria-selected="true">
+                                    Form Pengajuan
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-pur1" role="tabpanel" aria-labelledby="v-pills-pur1-tab">
+                                    <h4>Form Permintaan dan Pengajuan Barang</h4>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <img src="img/icon/forms.png" alt="" width="100px">
+                                            <h5>Form Pengajuan POP Bulanan</h5>
+                                            <p>Bagging, VT, Sticker, Kertas Termal, dll</p>
+                                            <a href="file/purchasing/Form Pengajuan POP Bulanan.xlsx" download class="btn btn-danger">Download Form</a>
+                                        </div>
+                                        <div class="col-sm">
+                                            <img src="img/icon/letter.png" alt="" width="100px">
+                                            <h5>Form Pengajuan Pembelian TH</h5>
+                                            <p>Ketika TH akan membeli sesuatu <br> &nbsp;</p>
+                                            
+                                            <a href="file/purchasing/FORM PENGAJUAN PEMBELIAN TH.xlsx" download class="btn btn-danger">Download Form</a>
+                                        </div>
+                                        <div class="col-sm">
+                                            <img src="img/icon/black-box.png" alt="" width="100px">
+                                            <h5>Form Permintaan Barang TH</h5>
+                                            <p>Ketika TH membutuhkan barang dari Purchasing</p>
+                                            <a href="file/purchasing/FORM PERMINTAAN BARANG TH.xlsx" download class="btn btn-danger">Download Form</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!-- DataTables JS -->
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
+
+<!-- Toogle Menu JS -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

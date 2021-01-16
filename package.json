@@ -1,0 +1,16 @@
+{
+  "name": "ide16helper",
+  "version": "0.1.1",
+  "description": "ID Express Jawa Barat",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Sastra Nur Alamsyah",
+  "license": "ISC",
+  "dependencies": {
+    "faunadb": "^4.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {}
+}
